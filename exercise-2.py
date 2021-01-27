@@ -22,9 +22,6 @@ def contains_3_consecutive(list_of_nums):
         if (list_of_nums[i+1] == list_of_nums[i] + 1 and
             list_of_nums[i+2] == list_of_nums[i] + 2):
             return True
-        else:
-            return False
-
     return False
 
 if __name__ == '__main__':
