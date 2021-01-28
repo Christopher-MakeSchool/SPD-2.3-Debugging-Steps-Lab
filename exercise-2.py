@@ -54,7 +54,7 @@ First, Skim the functions main and contains_3_consecutive from above, what do yo
       - ### Problem 2 ###
       - False
       - True
-Next, Run the code in the terminal with pyhron3 exercise-1.py to view the Actual Output
+Next, Run the code in the terminal with pyhron3 exercise-2.py to view the Actual Output
   - actual
     - ### Problem 2 ###
     - False

@@ -46,11 +46,11 @@ if __name__ == '__main__':
 
 #! Plan OF Attack
 '''
-First, Skim the Functions main and insetion_sort from above, what do you expect to be outputed?
+First, Skim the Functions main and insertion_sort from above, what do you expect to be outputed?
   - expected output
     - ### Problem 3 ###
     - [1, 2, 3, 5, 6]
-Next, Run the code in the terminal with pyhron3 exercise-1.py to view the Actual Output
+Next, Run the code in the terminal with pyhron3 exercise-3.py to view the Actual Output
   - actual
     - ### Problem 3 ###
       Traceback (most recent call last):
