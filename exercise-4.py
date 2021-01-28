@@ -18,24 +18,21 @@ Exercise 4
 # HINT: It may help to draw a picture to clarify what your assumptions are.
 
 def binary_search(arr, element, low=0, high=None):
-      """Returns the index of the given element within the array by performing a binary search."""
+    """Returns the index of the given element within the array by performing a binary search."""
     if high == None:
         high = len(arr) - 1
+    
+    if high >= low:
+        mid = (high + low) // 2
 
-    if high < low:
-        return -1
-
-    mid = (high + low) // 2
-
-    if arr[mid] == element: 
-        return mid
-
-    elif arr[mid] > element:
-        return binary_search(arr, element, low, mid)
-
-    else: 
-        return binary_search(arr, element, mid, high)
-
+        if arr[mid] == element:
+            return mid
+        elif arr[mid] > element:
+            return binary_search(arr, element, low, mid-1)
+        else:
+            return binary_search(arr, element, mid+1, high)
+    else:
+      return -1
 
 if __name__ == '__main__':
     answer = binary_search([1, 2, 4, 5, 7], 7)
@@ -46,9 +43,9 @@ if __name__ == '__main__':
 '''
 First, Skim the Functions main and binary_search from above, what do you expect to be outputed?
   - expected output
-    - True or False     |   base on if the number being searched for is found or not
+    - Index of the number being searched for is found, otherwise -1
     - output would be:
-    - True
+    - 4
 
 
 Next, Run the code in the terminal with pyhron3 exercise-4.py to view the Actual Output
